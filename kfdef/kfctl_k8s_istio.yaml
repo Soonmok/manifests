@@ -344,5 +344,5 @@ spec:
     name: seldon-core-operator
   repos:
   - name: manifests
-    uri: https://github.com/kubeflow/manifests/archive/master.tar.gz
-  version: master
+    uri: https://github.com/DavidSpek/manifests/archive/v1.1-branch.tar.gz
+  version: v1.1-branch
