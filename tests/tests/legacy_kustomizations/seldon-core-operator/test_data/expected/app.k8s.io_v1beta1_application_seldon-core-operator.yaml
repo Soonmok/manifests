@@ -11,7 +11,6 @@ metadata:
   name: seldon-core-operator
   namespace: kubeflow
 spec:
-  addOwnerRef: true
   componentKinds:
   - group: apps/v1
     kind: StatefulSet
@@ -23,23 +22,21 @@ spec:
     kind: Secret
   - group: v1
     kind: ConfigMap
-  descriptor:
-    description: Seldon allows users to create ML Inference Graphs to deploy their
-      models and serve predictions
-    keywords:
-    - seldon
-    - inference
-    links:
-    - description: Docs
-      url: https://docs.seldon.io/projects/seldon-core/en/v1.1.0/
-    maintainers:
-    - email: dev@seldon.io
-      name: Seldon
-    owners:
-    - email: dev@seldon.io
-      name: Seldon
-    type: seldon-core-operator
-    version: v1
+  description: Seldon allows users to create ML Inference Graphs to deploy their models
+    and serve predictions
+  icons: null
+  keywords:
+  - seldon
+  - inference
+  links:
+  - description: Docs
+    url: https://docs.seldon.io/projects/seldon-core/en/v1.1.0/
+  maintainers:
+  - email: dev@seldon.io
+    name: Seldon
+  owners:
+  - email: dev@seldon.io
+    name: Seldon
   selector:
     matchLabels:
       app.kubernetes.io/component: seldon
@@ -48,3 +45,5 @@ spec:
       app.kubernetes.io/name: seldon
       app.kubernetes.io/part-of: kubeflow
       app.kubernetes.io/version: 1.2.1
+  type: seldon-core-operator
+  version: v1

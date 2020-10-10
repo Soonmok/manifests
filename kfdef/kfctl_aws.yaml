@@ -94,6 +94,11 @@ spec:
         name: manifests
         path: stacks/aws/application/spartakus
     name: spartakus
+  - kustomizeConfig:
+      repoRef:
+        name: manifests
+        path: tensorboard/overlays/istio
+    name: tensorboard
   plugins:
   - kind: KfAwsPlugin
     metadata:

@@ -48,9 +48,7 @@ spec:
           value: profiles-kfam.kubeflow
         - name: REGISTRATION_FLOW
           value: "true"
-        - name: DASHBOARD_LINKS_CONFIGMAP
-          value: centraldashboard-links-config
-        image: gcr.io/kubeflow-images-public/centraldashboard:vmaster-gf39279c0
+        image: gcr.io/kubeflow-images-public/centraldashboard:v1.1.0-g35d7484a
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:

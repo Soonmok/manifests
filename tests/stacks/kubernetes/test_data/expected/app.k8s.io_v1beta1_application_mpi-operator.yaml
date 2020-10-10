@@ -7,7 +7,6 @@ metadata:
   name: mpi-operator
   namespace: kubeflow
 spec:
-  addOwnerRef: true
   componentKinds:
   - group: apps
     kind: Deployment
